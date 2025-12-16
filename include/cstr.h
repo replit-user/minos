@@ -9,7 +9,7 @@ typedef struct {
     char* data;  // pointer to char buffer
     u32 len;     // length of string (excluding null terminator)
 } str;
-
+u32 str_len(const char* str);
 // Create a str from a char* (assumes buffer is large enough)
 str str_create(char* buffer, const char* src);
 
@@ -36,5 +36,4 @@ int str_atoi(const str* s);
 
 // Get substring (dest buffer must be large enough)
 str str_substring(str* s, u32 start, u32 length, char* dest_buffer);
-
 #endif

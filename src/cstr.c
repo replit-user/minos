@@ -1,7 +1,7 @@
 #include "../include/cstr.h"
 
 // Compute length of char* string
-static u32 cstr_len(const char* str) {
+ u32 str_len(const char* str) {
     u32 len = 0;
     while (str[len] != '\0') len++;
     return len;
